@@ -15,5 +15,5 @@
 //   // by this way we can assign types to functions
 //   return a + b;
 // };
-let num:number =34
-num = "34" 
+var num = 34;
+num = "34";
