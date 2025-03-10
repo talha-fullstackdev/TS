@@ -1,2 +1,3 @@
 let nam = "talha"
-nam = 89
+nam = 893344
+console.log(nam)
