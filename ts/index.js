@@ -1,3 +1,4 @@
+"use strict";
 // let a  = 67
 // a = "talha"  // cannot assign a number type to string type in TS
 /////////////// asigning types to variables
@@ -15,5 +16,5 @@
 //   // by this way we can assign types to functions
 //   return a + b;
 // };
-var num = 34;
+let num = 34;
 num = "34";
