@@ -16,5 +16,23 @@
 //   // by this way we can assign types to functions
 //   return a + b;
 // };
-let num:number =34
-num = "34" 
+// let num:number =34
+// num = "34" 
+// let names:string[]=[]
+// names.push("7")
+// console.log(names)
+// let myName :{name:string} // here we initially made an object and assign its property types only here we say object have only one property of type string
+// myName = {name:"Talha Nawaz"}
+// let myName :{name:string,age?:number} // here we made age optional 
+// myName = {name:"Talha Nawaz",age:34}
+interface Person{ // made interface like we made classes and objects in javascript
+    name:string;
+    age:number;
+    gender:string;
+}
+let talha :Person
+talha = {
+    name:"Talha nawaz",
+    age:24,
+    gender:"male"
+}

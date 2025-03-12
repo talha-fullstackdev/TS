@@ -1,4 +1,3 @@
-"use strict";
 // let a  = 67
 // a = "talha"  // cannot assign a number type to string type in TS
 /////////////// asigning types to variables
@@ -6,7 +5,8 @@
 // myName = "Talha Nawaz";
 // let myNum: number = 45;
 // myNum = 45;
-////////////////////////////////
+//////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 ///////// asigning types to functions
 // const sum = (a: number, b: number) => {
 //   // by this way we can give types to functions parameters
@@ -16,5 +16,8 @@
 //   // by this way we can assign types to functions
 //   return a + b;
 // };
-let num = 34;
-num = "34";
+// let num:number =34
+// num = "34" 
+var names = [];
+names.push("7");
+console.log(names);
