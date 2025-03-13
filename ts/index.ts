@@ -37,15 +37,32 @@
 //   age: 24,
 //   gender: "male",
 // };
-type Animal = { // made a animal type
+// type Animal = { // made a animal type
+//   name: string;
+//   isPet: boolean;
+// };
+// type Cow = Animal & { //made a cow type and extend it from animal type so it can use animal types as well
+//   isVeg: boolean
+// };
+// const pet1: Cow = { // made a pet1 object which uses both animal types and cow types
+//   name:"horse",
+//   isPet:true,
+//   isVeg:true
+// }
+//////////////////////////////////////
+type User = {
   name: string;
-  isPet: boolean;
+  email: string;
+  age: number;
+  gender: string;
+  address: string;
 };
-type Cow = Animal & { //made a cow type and extend it from animal type so it can use animal types as well
-  isVeg: boolean
+let emp1: User = {
+  name: "Talha Nawaz",
+  email: "nawazt@gmail.com",
+  age: 24,
+  gender: "male",
+  address: "abbottabad",
 };
-const pet1: Cow = { // made a pet1 object which uses both animal types and cow types
-  name:"horse",
-  isPet:true,
-  isVeg:true
-}
+console.log(emp1)
+////////////////////////////////////////
