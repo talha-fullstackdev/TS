@@ -50,19 +50,23 @@
 //   isVeg:true
 // }
 //////////////////////////////////////
-type User = {
-  name: string;
-  email: string;
-  age: number;
-  gender: string;
-  address: string;
-};
-let emp1: User = {
-  name: "Talha Nawaz",
-  email: "nawazt@gmail.com",
-  age: 24,
-  gender: "male",
-  address: "abbottabad",
-};
-console.log(emp1)
+// type User = {
+//   name: string;
+//   email: string;
+//   age: number;
+//   gender: string;
+//   address: string;
+// };
+// let emp1: User = {
+//   name: "Talha Nawaz",
+//   email: "nawazt@gmail.com",
+//   age: 24,
+//   gender: "male",
+//   address: "abbottabad",
+// };
+// console.log(emp1)
 ////////////////////////////////////////
+let num1:number = 10
+let num2:number =20
+let sum:number = num1+num2
+console.log(sum)
