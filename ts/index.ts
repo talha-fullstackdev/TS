@@ -71,8 +71,11 @@
 // let num2:number =20
 // let sum:number = num1+num2
 // console.log(sum)
-const sum =(num1:number,num2:number):number =>{ // made a function of sum two numbers
-  return num1+num2
-}
-let check = sum(74,3)
-console.log(check)
+// const sum =(num1:number,num2:number):number =>{ // made a function of sum two numbers
+//   return num1+num2
+// }
+// let check = sum(74,3)
+// console.log(check)
+let num:number=67
+let num2:number = "ks"
+console.log(num+num2)
