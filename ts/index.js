@@ -66,7 +66,7 @@
 //   address: "abbottabad",
 // };
 // console.log(emp1)
-////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 // add two numbers
 // let num1:number = 10
 // let num2:number =20
@@ -77,7 +77,15 @@
 // }
 // let check = sum(74,3)
 // console.log(check)
-let num = 67;
-let num2 = 78;
-let num3 = 78;
-console.log(num + num2 + num3);
+// let num:number=67
+// let num2:number = 78
+// let num3:number = 78
+// console.log(num+num2+num3)
+const isEven = (num) => {
+    if (num % 2 === 0) {
+        return ("even num");
+    }
+    return ("not even");
+};
+let check = isEven(9);
+console.log(check);

@@ -80,3 +80,11 @@
 // let num2:number = 78
 // let num3:number = 78
 // console.log(num+num2+num3)
+const isEven = (num:number) => {
+    if (num % 2 === 0) {
+        return ("even num");
+    }
+    return ("not even");
+};
+let check = isEven(4);
+console.log(check)
