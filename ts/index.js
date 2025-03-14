@@ -1,3 +1,4 @@
+"use strict";
 // let a  = 67
 // a = "talha"  // cannot assign a number type to string type in TS
 /////////////// asigning types to variables
@@ -76,7 +77,7 @@
 // }
 // let check = sum(74,3)
 // console.log(check)
-// let num:number=67
-// let num2:number = 78
-// let num3:number = 78
-// console.log(num+num2+num3)
+let num = 67;
+let num2 = 78;
+let num3 = 78;
+console.log(num + num2 + num3);
