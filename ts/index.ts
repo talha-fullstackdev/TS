@@ -84,7 +84,7 @@ const isEven = (num:number) => {
     if (num % 2 === 0) {
         return ("even num");
     }
-    return ("not even");
+    return ("odd num");
 };
 let check = isEven(4);
 console.log(check)
