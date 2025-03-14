@@ -80,11 +80,21 @@
 // let num2:number = 78
 // let num3:number = 78
 // console.log(num+num2+num3)
-const isEven = (num:number) => {
-    if (num % 2 === 0) {
-        return ("even num");
-    }
-    return ("odd num");
-};
-let check = isEven(4);
-console.log(check)
+// const isEven = (num:number) => {
+//     if (num % 2 === 0) {
+//         return ("even num");
+//     }
+//     return ("odd num");
+// };
+// let check = isEven(4);
+// console.log(check)
+///////////////////
+// const greet = (name: string, id: number) => {
+//     return  console.log(`welocme ${name} your id is ${id}`);
+
+// };
+// const check = greet("talha", 45);
+// console.log(check);
+////////////////////////////////
+const myArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 109];
+console.log(myArray);
