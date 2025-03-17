@@ -164,6 +164,10 @@ const products = {
     name: "laptop",
     price: 50000,
     inStock: true,
+    address: {
+        city: "Abbottabad",
+        provience: "KPK"
+    }
 };
-products.name = "headphones";
+products.name = "headphones"; //chnaging the object property as it have same data type if i assign it a number or boolean it will not works in Ts
 console.log(products);
