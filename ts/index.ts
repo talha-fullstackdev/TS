@@ -140,13 +140,21 @@
 // console.log(check)
 /////////////////////////////////
 // write a programe to find max and min value from an array
-const minMax = (array: number[]) => {
-  let min = array.reduce((acc: number, cur: number) => acc < cur ? cur : acc ,array[0]);
-  let max = array.reduce((acc: number, cur: number) => acc > cur ? cur : acc ,array[0]);
-  return {
-    minumum :min,
-    maximum:max
-  }
-};
-const check = minMax([2,3,4,5,6,7,8])
+// const minMax = (array: number[]) => {
+//   let min = array.reduce((acc: number, cur: number) => acc < cur ? cur : acc ,array[0]);
+//   let max = array.reduce((acc: number, cur: number) => acc > cur ? cur : acc ,array[0]);
+//   return {
+//     minumum :min,
+//     maximum:max
+//   }
+// };
+// const check = minMax([2,3,4,5,6,7,8])
+// console.log(check)
+/////////////////////////////////////////////////////
+// write a programe to convert array elements to uppercase
+const convertToUpperCase =((array:string[])=>{
+    const upperCaseEle:string[]=array.map((ele:string)=>ele.toUpperCase())
+    return upperCaseEle
+})
+const check =convertToUpperCase(["talha","hamza","hussain","Ali"])
 console.log(check)
