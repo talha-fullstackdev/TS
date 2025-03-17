@@ -122,12 +122,18 @@
 // const evenNums: number[] = nums.filter((num: number) => num % 2 === 0);
 // console.log(evenNums)
 // write a program to return only those values have length greater then 10
-const names = ["talha nawaz", "hamza nawaz", "hussain nawaz"];
-const filterNames = names.filter((name) => name.length > 12);
-if (filterNames.length > 0) {
-    const [name] = filterNames;
-    console.log(name, ",have length greater then 12");
-}
-else {
-    console.log("no name have length greater then 12");
-}
+// const names: string[] = ["talha nawaz", "hamza nawaz", "hussain nawaz"];
+// const filterNames: string[] = names.filter((name: string) => name.length > 12);
+// if (filterNames.length > 0) {
+//   const[name] = filterNames
+//    console.log(name,",have length greater then 12")
+// } else {
+//   console.log("no name have length greater then 12");
+// }
+const Average = ((array) => {
+    const result = array.reduce((acc, cur) => acc + cur / array.length, 0);
+    return result;
+});
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14];
+const check = Average(array);
+console.log(check);
