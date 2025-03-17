@@ -92,102 +92,39 @@
 ///////////////////
 // const greet = (name: string, id: number) => {
 //     return  console.log(`welocme ${name} your id is ${id}`);
-// };
-// const check = greet("talha", 45);
-// console.log(check);
-////////////////////////////////
-// const myArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 109];
-// console.log(myArray);
-/////////////// arrays methods ts map method
-// const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const mapArray: number[] = numbers.map((value: number) => value * 2);
-// console.log(mapArray)
-///////////////////////////////// filter method
-// const fruits:string[]=["apple","banana","mango","pineapple"]
-// const filterFruits:string[]=fruits.filter((fruit :string)=>fruit !== "banana")
-// console.log(filterFruits)
-////////////////////////////////////////////////////reduce method
-// const numsArray: number[] = [3, 4, 5, 6, 7, 89];
-// const reduceArray: number = numsArray.reduce(
-//   (acc: number, cur: number) => acc + cur,
-//   0
-// );
-// console.log(reduceArray);
-//// write a programe in Ts to convert Nums to string
-// const myNums: number[] = [3, 4, 5, 6, 7, 8];
-// const numsToStr: string[] = myNums.map((num: number) => num.toString());
-// console.log(numsToStr);
-//////// programe to make a array of only nums in an arrray
-// const nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const evenNums: number[] = nums.filter((num: number) => num % 2 === 0);
-// console.log(evenNums)
-// write a program to return only those values have length greater then 10
-// const names: string[] = ["talha nawaz", "hamza nawaz", "hussain nawaz"];
-// const filterNames: string[] = names.filter((name: string) => name.length > 12);
-// if (filterNames.length > 0) {
-//   const[name] = filterNames
-//    console.log(name,",have length greater then 12")
-// } else {
-//   console.log("no name have length greater then 12");
-// }
-/////////////wwrite a programe to find average of arrays numbers
-// const Average =((array:number[])=>{
-//     const result = array.reduce((acc:number,cur:number)=>acc+cur/array.length,0)
-//     return result
-// })
-// const array =[1,2,3,4,5,6,7,8,9,10,12,13,14]
-// const check = Average(array)
-// console.log(check)
-/////////////////////////////////
-// write a programe to find max and min value from an array
-// const minMax = (array: number[]) => {
-//   let min = array.reduce((acc: number, cur: number) => acc < cur ? cur : acc ,array[0]);
-//   let max = array.reduce((acc: number, cur: number) => acc > cur ? cur : acc ,array[0]);
-//   return {
-//     minumum :min,
-//     maximum:max
-//   }
-// };
-// const check = minMax([2,3,4,5,6,7,8])
-// console.log(check)
-/////////////////////////////////////////////////////
-// write a programe to convert array elements to uppercase
-// const convertToUpperCase = (array: string[]) => {
-//   const upperCaseEle: string[] = array.map((ele: string) => ele.toUpperCase());
-//   return upperCaseEle;
-// };
-// const check = convertToUpperCase(["talha", "hamza", "hussain", "Ali"]);
-// console.log(check);
-//////////////////////////////////////////////////////////////////////////
-// learning objects in typescript
-// const products: {
-//   name: string;  // when defining object schema use semicolons instead of comas  
-//   price: number;
-//   inStock: boolean;
-//   address :{
-//     city:string;
-//     provience:string;
-//   }
-// } = {
-//   name: "laptop",
-//   price: 50000,
-//   inStock: true,
-//   address:{
-//     city:"Abbottabad",
-//     provience:"KPK"
-//   }
-// };
-// products.name="headphones" //chnaging the object property as it have same data type if i assign it a number or boolean it will not works in Ts
-// console.log(products);
-const userDetails = {
-    name: "Uzair Ansari",
+const emp1 = {
+    name: "Talha Nawaz",
+    email: "talha123@gmail.com",
     age: 24,
-    gender: "Male",
-    postition: "Software Engineer",
-    salary: 500000,
+    gender: "male",
+    department: "DEV",
     address: {
-        homeTown: "Kasur punjab",
-        city: "lahore pakistan"
+        primary: "Cavalary Ground lahore Cant",
+        secondary: "Toheed colony Abbottabad"
     }
 };
-console.log(userDetails);
+const emp2 = {
+    name: "Hamza Nawaz",
+    email: "hamza123@gmail.com",
+    age: 23,
+    gender: "male",
+    department: "Finance",
+    address: {
+        primary: "Sector G-11/4",
+        secondary: "Toheed colony Abbottabad"
+    }
+};
+const emp3 = {
+    name: "Uzair Ansari",
+    email: "uzair123@gmail.com",
+    age: 24,
+    gender: "male",
+    department: "QA",
+    address: {
+        primary: "Bankers Town Ghazi road, near ferozpur road lahore",
+        secondary: "Kasur ,punjab pakistan"
+    }
+};
+console.log(emp1.name, emp1.department);
+console.log(emp2.name, emp2.department);
+console.log(emp3.name, emp3.department);

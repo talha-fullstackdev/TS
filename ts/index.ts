@@ -179,25 +179,75 @@
 // };
 // products.name="headphones" //chnaging the object property as it have same data type if i assign it a number or boolean it will not works in Ts
 // console.log(products);
-const userDetails: {
+// const userDetails: {
+//   name: string;
+//   age: number;
+//   gender: string;
+//   postition: string;
+//   salary: number;
+//   address: {
+//     homeTown: string;
+//     city: string;
+//   };
+// } = {
+//   name: "Uzair Ansari",
+//   age: 24,
+//   gender: "Male",
+//   postition: "Software Engineer",
+//   salary: 500000,
+//   address: {
+//     homeTown: "Kasur punjab",
+//     city: "lahore pakistan",
+//   },
+// };
+// console.log(userDetails);
+//////////////////////////////////////////////////////////////////
+///////////////////////////TypeScript Type Aliases
+type Employee = {
+  // type alias here we make single employess data types and now we can use it with any employee without defing same types        for every employee
   name: string;
+  email: string;
   age: number;
   gender: string;
-  postition: string;
-  salary: number;
+  department: string;
   address: {
-    homeTown: string;
-    city: string;
+    primary: string;
+    secondary: string;
   };
-} = {
-  name: "Uzair Ansari",
-  age: 24,
-  gender: "Male",
-  postition: "Software Engineer",
-  salary: 500000,
-  address: {
-    homeTown: "Kasur punjab",
-    city: "lahore pakistan",
-  },
 };
-console.log(userDetails);
+const emp1:Employee ={ // here putting Employee type in place of types providing to use Employee type
+    name:"Talha Nawaz",
+    email:"talha123@gmail.com",
+    age:24,
+    gender:"male",
+    department:"DEV",
+    address:{
+        primary:"Cavalary Ground lahore Cant",
+        secondary:"Toheed colony Abbottabad"
+    }
+}
+const emp2:Employee = { // now i can use it with any employee who have same type of info
+    name:"Hamza Nawaz",
+    email:"hamza123@gmail.com",
+    age:23,
+    gender:"male",
+    department:"Finance",
+    address:{
+        primary:"Sector G-11/4",
+        secondary:"Toheed colony Abbottabad"
+    }
+}
+const emp3:Employee ={
+    name:"Uzair Ansari",
+    email:"uzair123@gmail.com",
+    age:24,
+    gender:"male",
+    department:"QA",
+    address:{
+        primary:"Bankers Town Ghazi road, near ferozpur road lahore",
+        secondary:"Kasur ,punjab pakistan"
+    }
+}
+console.log(emp1.name,emp1.department)
+console.log(emp2.name,emp2.department)
+console.log(emp3.name,emp3.department)
