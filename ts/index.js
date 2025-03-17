@@ -114,7 +114,10 @@
 // );
 // console.log(reduceArray);
 //// write a programe in Ts to convert Nums to string
-const myNums = [3, 4, 5, 6, 7, 8];
-const numsToStr = myNums.map((num) => num.toString());
-console.log(numsToStr);
-console.log(myNums)
+// const myNums: number[] = [3, 4, 5, 6, 7, 8];
+// const numsToStr: string[] = myNums.map((num: number) => num.toString());
+// console.log(numsToStr);
+//////// programe to make a array of only nums in an arrray
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evenNums = nums.filter((num) => num % 2 === 0);
+console.log(evenNums);
