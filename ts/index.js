@@ -165,4 +165,5 @@ const products = {
     price: 50000,
     inStock: true,
 };
+products.name = "headphones";
 console.log(products);
