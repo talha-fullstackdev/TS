@@ -92,39 +92,13 @@
 ///////////////////
 // const greet = (name: string, id: number) => {
 //     return  console.log(`welocme ${name} your id is ${id}`);
-const emp1 = {
-    name: "Talha Nawaz",
-    email: "talha123@gmail.com",
-    age: 24,
-    gender: "male",
-    department: "DEV",
-    address: {
-        primary: "Cavalary Ground lahore Cant",
-        secondary: "Toheed colony Abbottabad"
-    }
+const calPrice = (product) => {
+    let result = product.price * product.quantity;
+    return result;
 };
-const emp2 = {
-    name: "Hamza Nawaz",
-    email: "hamza123@gmail.com",
-    age: 23,
-    gender: "male",
-    department: "Finance",
-    address: {
-        primary: "Sector G-11/4",
-        secondary: "Toheed colony Abbottabad"
-    }
+let product = {
+    price: 100,
+    quantity: 5
 };
-const emp3 = {
-    name: "Uzair Ansari",
-    email: "uzair123@gmail.com",
-    age: 24,
-    gender: "male",
-    department: "QA",
-    address: {
-        primary: "Bankers Town Ghazi road, near ferozpur road lahore",
-        secondary: "Kasur ,punjab pakistan"
-    }
-};
-console.log(emp1.name, emp1.department);
-console.log(emp2.name, emp2.department);
-console.log(emp3.name, emp3.department);
+let check = calPrice(product);
+console.log(check);
