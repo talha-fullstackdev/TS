@@ -130,10 +130,23 @@
 // } else {
 //   console.log("no name have length greater then 12");
 // }
-const Average =((array:number[])=>{
-    const result = array.reduce((acc:number,cur:number)=>acc+cur/array.length,0)
-    return result
-})
-const array =[1,2,3,4,5,6,7,8,9,10,12,13,14]
-const check = Average(array)
+/////////////wwrite a programe to find average of arrays numbers
+// const Average =((array:number[])=>{
+//     const result = array.reduce((acc:number,cur:number)=>acc+cur/array.length,0)
+//     return result
+// })
+// const array =[1,2,3,4,5,6,7,8,9,10,12,13,14]
+// const check = Average(array)
+// console.log(check)
+/////////////////////////////////
+// write a programe to find max and min value from an array
+const minMax = (array: number[]) => {
+  let min = array.reduce((acc: number, cur: number) => acc < cur ? cur : acc ,array[0]);
+  let max = array.reduce((acc: number, cur: number) => acc > cur ? cur : acc ,array[0]);
+  return {
+    minumum :min,
+    maximum:max
+  }
+};
+const check = minMax([2,3,4,5,6,7,8])
 console.log(check)
