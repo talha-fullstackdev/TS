@@ -152,9 +152,9 @@
 // console.log(check)
 /////////////////////////////////////////////////////
 // write a programe to convert array elements to uppercase
-const convertToUpperCase =((array:string[])=>{
-    const upperCaseEle:string[]=array.map((ele:string)=>ele.toUpperCase())
-    return upperCaseEle
-})
-const check =convertToUpperCase(["talha","hamza","hussain","Ali"])
-console.log(check)
+const convertToUpperCase = (array: string[]) => {
+  const upperCaseEle: string[] = array.map((ele: string) => ele.toUpperCase());
+  return upperCaseEle;
+};
+const check = convertToUpperCase(["talha", "hamza", "hussain", "Ali"]);
+console.log(check);
