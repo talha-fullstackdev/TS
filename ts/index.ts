@@ -96,5 +96,9 @@
 // const check = greet("talha", 45);
 // console.log(check);
 ////////////////////////////////
-const myArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 109];
-console.log(myArray);
+// const myArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 109];
+// console.log(myArray);
+/////////////// arrays methods ts
+const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const mapArray: number[] = numbers.map((value: number) => value * 2);
+console.log(mapArray)
