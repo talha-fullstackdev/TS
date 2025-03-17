@@ -98,7 +98,15 @@
 ////////////////////////////////
 // const myArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 109];
 // console.log(myArray);
-/////////////// arrays methods ts
-const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const mapArray: number[] = numbers.map((value: number) => value * 2);
-console.log(mapArray)
+/////////////// arrays methods ts map method
+// const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const mapArray: number[] = numbers.map((value: number) => value * 2);
+// console.log(mapArray)
+///////////////////////////////// filter method
+// const fruits:string[]=["apple","banana","mango","pineapple"]
+// const filterFruits:string[]=fruits.filter((fruit :string)=>fruit !== "banana")
+// console.log(filterFruits)
+////////////////////////////////////////////////////reduce method
+const numsArray :number[]=[3,4,5,6,7,89]
+const reduceArray:number=numsArray.reduce((acc:number,cur:number)=>acc+cur,0)
+console.log(reduceArray)

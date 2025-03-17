@@ -99,6 +99,13 @@
 // const myArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 109];
 // console.log(myArray);
 /////////////// arrays methods ts
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 107];
-const mapArray = numbers.map((value) => value * 2);
-console.log(mapArray);
+// const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const mapArray: number[] = numbers.map((value: number) => value * 2);
+// console.log(mapArray)
+/////////////////////////////////
+// const fruits:string[]=["apple","banana","mango","pineapple"]
+// const filterFruits:string[]=fruits.filter((fruit :string)=>fruit !== "banana")
+// console.log(filterFruits)
+const numsArray = [3, 4,6];
+const reduceArray = numsArray.reduce((acc, cur) => acc + cur, 0);
+console.log(reduceArray);
