@@ -160,14 +160,34 @@
 // console.log(check);
 //////////////////////////////////////////////////////////////////////////
 // learning objects in typescript
-const products = {
-    name: "laptop",
-    price: 50000,
-    inStock: true,
+// const products: {
+//   name: string;  // when defining object schema use semicolons instead of comas  
+//   price: number;
+//   inStock: boolean;
+//   address :{
+//     city:string;
+//     provience:string;
+//   }
+// } = {
+//   name: "laptop",
+//   price: 50000,
+//   inStock: true,
+//   address:{
+//     city:"Abbottabad",
+//     provience:"KPK"
+//   }
+// };
+// products.name="headphones" //chnaging the object property as it have same data type if i assign it a number or boolean it will not works in Ts
+// console.log(products);
+const userDetails = {
+    name: "Uzair Ansari",
+    age: 24,
+    gender: "Male",
+    postition: "Software Engineer",
+    salary: 500000,
     address: {
-        city: "Abbottabad",
-        provience: "KPK"
+        homeTown: "Kasur punjab",
+        city: "lahore pakistan"
     }
 };
-products.name = "headphones"; //chnaging the object property as it have same data type if i assign it a number or boolean it will not works in Ts
-console.log(products);
+console.log(userDetails);
