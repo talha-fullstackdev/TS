@@ -152,9 +152,21 @@
 // console.log(check)
 /////////////////////////////////////////////////////
 // write a programe to convert array elements to uppercase
-const convertToUpperCase = (array: string[]) => {
-  const upperCaseEle: string[] = array.map((ele: string) => ele.toUpperCase());
-  return upperCaseEle;
+// const convertToUpperCase = (array: string[]) => {
+//   const upperCaseEle: string[] = array.map((ele: string) => ele.toUpperCase());
+//   return upperCaseEle;
+// };
+// const check = convertToUpperCase(["talha", "hamza", "hussain", "Ali"]);
+// console.log(check);
+//////////////////////////////////////////////////////////////////////////
+// learning objects in typescript
+const products: {
+  name: string;
+  price: number;
+  inStock: boolean;
+} = {
+  name: "laptop",
+  price: 50000,
+  inStock: true,
 };
-const check = convertToUpperCase(["talha", "hamza", "hussain", "Ali"]);
-console.log(check);
+console.log(products);
