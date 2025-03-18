@@ -266,3 +266,4 @@ let product: Products = {
 };
 let check = calPrice(product);
 console.log(check);
+
