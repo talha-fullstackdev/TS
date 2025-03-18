@@ -252,18 +252,18 @@
 // console.log(emp2.name,emp2.department)
 // console.log(emp3.name,emp3.department)
 /// made a programe to find total price of products that is price * quantity
-type Products = {
-  price: number;
-  quantity: number;
-};
-const calPrice = (product: Products) => {
-  let result: number = product.price * product.quantity;
-  return result;
-};
-let product: Products = {
-  price: 100,
-  quantity: 5,
-};
-let check = calPrice(product);
-console.log(check);
+// type Products = {
+//   price: number;
+//   quantity: number;
+// };
+// const calPrice = (product: Products) => {
+//   let result: number = product.price * product.quantity;
+//   return result;
+// };
+// let product: Products = {
+//   price: 100,
+//   quantity: 5,
+// };
+// let check = calPrice(product);
+// console.log(check);
 
