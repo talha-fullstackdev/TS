@@ -289,4 +289,7 @@ const student1: Students = {
   address: "abbottabad",
   greet:((country)=> `i am from ${country}`)
 };
-console.log(student1.greet("abbottabad"))
+console.log(student1.greet("pakistan"))
+console.log(student1.greet("saudia"))
+console.log(student1.greet("UAE"))
+console.log(student1.greet("China"))
