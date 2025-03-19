@@ -100,6 +100,9 @@ const student1 = {
     gender: "male",
     contactNum: 34809,
     address: "abbottabad",
-    greet: ((country) => `i am from ${country}`)
+    greet: ((country) => `my name is ${student1.name}i am from ${country}`)
 };
-console.log(student1.greet("abbottabad"));
+console.log(student1.greet("pakistan"));
+console.log(student1.greet("saudia"));
+console.log(student1.greet("UAE"));
+console.log(student1.greet("China"));
