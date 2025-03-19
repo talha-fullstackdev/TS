@@ -92,13 +92,14 @@
 ///////////////////
 // const greet = (name: string, id: number) => {
 //     return  console.log(`welocme ${name} your id is ${id}`);
-const calPrice = (product) => {
-    let result = product.price * product.quantity;
-    return result;
+const student1 = {
+    name: "Talha Nawaz",
+    email: "talha123",
+    rollNumber: 213,
+    age: 24,
+    gender: "male",
+    contactNum: 34809,
+    address: "abbottabad",
+    greet: ((country) => `i am from ${country}`)
 };
-let product = {
-    price: 100,
-    quantity: 5
-};
-let check = calPrice(product);
-console.log(check);
+console.log(student1.greet("abbottabad"));

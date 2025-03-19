@@ -266,3 +266,27 @@
 // };
 // let check = calPrice(product);
 // console.log(check);
+////////////////////////////////////////////////
+////////////////Call Signatures in TypeScript
+type Students = {
+  // made studnent object types
+  name: string;
+  email: string;
+  rollNumber: number;
+  age: number;
+  gender?: string; // ? this make the value optional if some one not want to give gender this will work fine
+  contactNum: number;
+  address?: string;
+  greet:(country:string)=>string // call signature define the stracture of function in object called call signature
+};
+const student1: Students = {
+  name: "Talha Nawaz",
+  email: "talha123",
+  rollNumber: 213,
+  age: 24,
+  gender: "male",
+  contactNum: 34809,
+  address: "abbottabad",
+  greet:((country)=> `i am from ${country}`)
+};
+console.log(student1.greet("abbottabad"))
