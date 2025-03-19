@@ -266,4 +266,3 @@
 // };
 // let check = calPrice(product);
 // console.log(check);
-
