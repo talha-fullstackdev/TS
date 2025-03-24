@@ -387,15 +387,38 @@
 // inputDiffvalues("talha");
 // inputDiffvalues(24);
 // inputDiffvalues(true);
-const practiceFunction = ((elem) => {
-    if (typeof elem == "string") {
-        return elem.toLocaleUpperCase();
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+// made a function which take two parameters if type of parameter is string then convert it to uppercase or the type is number then double the number
+// const practiceFunction = (elem: string | number | boolean):string|number => { 
+//   if (typeof elem == "string") {
+//     return elem.toLocaleUpperCase();
+//   }
+//   if (typeof elem == "number") {
+//     return elem * 2;
+//   }
+//   if(typeof elem !== "string" || "number"){
+//     return "invalid input"
+//   }
+//    return elem
+// };
+// const checkStr = practiceFunction("talha");
+// const checkNum = practiceFunction(10);
+// const checkInvalid = practiceFunction(true)
+// console.log(checkInvalid)
+// console.log(checkStr);
+// console.log(checkNum);
+const practice = ((value) => {
+    if (typeof value == "string") {
+        return value.charAt(0).toUpperCase() + value.slice(1);
     }
-    if (typeof elem == "number") {
-        return elem * elem;
+    if (typeof value == "boolean") {
+        return value == true ? "yes" : "no";
     }
+    if (typeof value == "number") {
+        return `$${value.toFixed(2)}`;
+    }
+    return value;
 });
-const checkStr = practiceFunction("talha");
-const checkNum = practiceFunction(2);
-console.log(checkStr);
-console.log(checkNum);
+const check = practice(30.86546);
+console.log(check);
