@@ -268,28 +268,76 @@
 // console.log(check);
 ////////////////////////////////////////////////
 ////////////////Call Signatures in TypeScript
-type Students = {
-  // made studnent object types
-  name: string;
+// type Students = {
+//   // made studnent object types
+//   name: string;
+//   email: string;
+//   rollNumber: number;
+//   age: number;
+//   gender?: string; // ? this make the value optional if some one not want to give gender this will work fine
+//   contactNum: number;
+//   address?: string;
+//   greet: (country: string) => string; // call signature define the stracture of function in object called call signature
+// };
+// const student1: Students = {
+//   name: "Talha Nawaz",
+//   email: "talha123",
+//   rollNumber: 213,
+//   age: 24,
+//   gender: "male",
+//   contactNum: 34809,
+//   address: "abbottabad",
+//   greet: (country) => `my name is ${student1.name} i am from ${country}`,
+// };
+// console.log(student1.greet("pakistan"));
+// console.log(student1.greet("saudia"));
+// console.log(student1.greet("UAE"));
+// console.log(student1.greet("China"));
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+// type LoginDetails = {
+//     name: string;
+//     email: string;
+//     age: number;
+//     gender: string;
+//     contact: number;
+//     bloodGroup?: string;
+//     address?: string;
+//     greet:((string:string)=>string)
+//   };
+//   const userOne :LoginDetails ={
+//       name:"Talha",
+//       email:"123",
+//       age:24,
+//       gender:"male",
+//       contact:+92323,
+//       bloodGroup:"O-",
+//       address:"abbottabad",
+//       greet:((country)=>`hello my name is ${userOne.name} and i am from ${country}`)
+//   }
+//   console.log(userOne.greet("pakistan"))
+//////////////////////////////////////////////
+/////////// Enums in TS
+enum Roles { // if we dont give values to key then by default Ts assign them numaric values starting from 0
+  user = "user", // here we use = instead of :
+  admin = "admin",
+}
+type LoginDetails = {
+  name?: string;
   email: string;
-  rollNumber: number;
-  age: number;
-  gender?: string; // ? this make the value optional if some one not want to give gender this will work fine
-  contactNum: number;
-  address?: string;
-  greet:(country:string)=>string // call signature define the stracture of function in object called call signature
+  password: string;
+  role: Roles; // like this we use Roles enum object
 };
-const student1: Students = {
-  name: "Talha Nawaz",
-  email: "talha123",
-  rollNumber: 213,
-  age: 24,
-  gender: "male",
-  contactNum: 34809,
-  address: "abbottabad",
-  greet:((country)=> `my name is ${student1.name} i am from ${country}`)
+const user1: LoginDetails = {
+  email: "talha@gmail.com",
+  password: "xyz",
+  role: Roles.admin,
 };
-console.log(student1.greet("pakistan"))
-console.log(student1.greet("saudia"))
-console.log(student1.greet("UAE"))
-console.log(student1.greet("China"))
+const user2: LoginDetails = {
+  email: "hamza@gmail.com",
+  password: "abc",
+  role: Roles.user,
+};
+// console.log("eamil >>>", user1.email, "password >>>", user1.password);
+console.log(user1)
+console.log(user2)
