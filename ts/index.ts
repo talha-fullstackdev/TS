@@ -357,3 +357,10 @@
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 ///////// Tuples In typescript
+// defining a tuple type for a person information
+type PersonInfo = [string, number, boolean]; // here by definng types this is now a tupple
+const person1 : PersonInfo = ["talha", 24, true]
+// const person2 : PersonInfo = [ 24,"talha", true] // here orders matter now we made its type as tupple 
+const person3 : PersonInfo =["hamza",23,false]
+console.log(person1)
+console.log(person3)
