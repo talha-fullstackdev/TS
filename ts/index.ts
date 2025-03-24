@@ -382,3 +382,25 @@
 //////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 ///////// Unions and Intersections in TypeScript
+// const inputDiffvalues = (elem: string | number | boolean) => {
+//   // by this way a function can accept multiples types data this is called union in TS
+//   console.log(elem);
+// };
+// inputDiffvalues("talha");
+// inputDiffvalues(24);
+// inputDiffvalues(true);
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+// made a function which take two parameters if type of parameter is string then convert it to uppercase or the type is number then double the number
+const practiceFunction = (elem: string | number) => { 
+  if (typeof elem == "string") {
+    return elem.toLocaleUpperCase();
+  }
+  if (typeof elem == "number") {
+    return elem * elem;
+  }
+};
+const checkStr = practiceFunction("talha");
+const checkNum = practiceFunction(2);
+console.log(checkStr);
+console.log(checkNum);
