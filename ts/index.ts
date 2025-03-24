@@ -382,6 +382,7 @@
 //////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 ///////// Unions and Intersections in TypeScript
+// ******************* Unions **************************************
 // const inputDiffvalues = (elem: string | number | boolean) => {
 //   // by this way a function can accept multiples types data this is called union in TS
 //   console.log(elem);
@@ -411,18 +412,20 @@
 // console.log(checkStr);
 // console.log(checkNum);
 //////////////practice question
-const practice = ((value:string|number|boolean):string|number|boolean =>{
-    if(typeof value =="string"){
-        return value.charAt(0).toUpperCase() + value.slice(1);
-    }
-    if(typeof value =="boolean"){
-        return value==true ? "yes" :"no" 
-    }
-    if(typeof value =="number"){
-        return `$${value.toFixed(2)}`
-    }
-    return value;
+// const practice = ((value:string|number|boolean):string|number|boolean =>{
+//     if(typeof value =="string"){
+//         return value.charAt(0).toUpperCase() + value.slice(1);
+//     }
+//     if(typeof value =="boolean"){
+//         return value==true ? "yes" :"no" 
+//     }
+//     if(typeof value =="number"){
+//         return `$${value.toFixed(2)}`
+//     }
+//     return value;
          
-})
-const check =practice(30.86546)
-console.log(check)
+// })
+// const check =practice(30.86546)
+// console.log(check)
+///////////////////////////////////////////////////////////////////////////////////////
+// ******************* Unions **************************************
