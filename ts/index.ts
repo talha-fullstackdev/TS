@@ -374,8 +374,11 @@
 // console.log(check);
 
 //////////////////////////////////////////////////////////
-type ProductInfo = [string, number, number];
-const product1: ProductInfo = ["headphones", 3000, 20];
-const product2: ProductInfo = ["laptop", 70000, 30];
-console.log("product 1 >>> ", product1);
-console.log("product 2 >>> ", product2);
+// type ProductInfo = [string, number, number];
+// const product1: ProductInfo = ["headphones", 3000, 20];
+// const product2: ProductInfo = ["laptop", 70000, 30];
+// console.log("product 1 >>> ", product1);
+// console.log("product 2 >>> ", product2);
+//////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+///////// Unions and Intersections in TypeScript
