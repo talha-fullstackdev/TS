@@ -358,17 +358,24 @@
 /////////////////////////////////////////////////////////////////////
 ///////// Tuples In typescript
 // defining a tuple type for a person information
-type PersonInfo = [string, number, boolean]; // here by definng types this is now a tupple
-const person1: PersonInfo = ["talha", 24, true];
-// const person2 : PersonInfo = [ 24,"talha", true] // here orders matter now we made its type as tupple
-const person3: PersonInfo = ["hamza", 23, false];
-// console.log(person1);
-// console.log(person3);
-const personDetails = (user: PersonInfo): string => {
-  const [name, age, license] = user;
-  return `user name is ${name} his age is ${age} and he ${
-    license ? "have" : "don't have"
-  } a driving license`;
-};
-const check = personDetails(person3);
-console.log(check);
+// type PersonInfo = [string, number, boolean]; // here by definng types this is now a tupple
+// const person1: PersonInfo = ["talha", 24, true];
+// // const person2 : PersonInfo = [ 24,"talha", true] // here orders matter now we made its type as tupple
+// const person3: PersonInfo = ["hamza", 23, false];
+// // console.log(person1);
+// // console.log(person3);
+// const personDetails = (user: PersonInfo): string => {
+//   const [name, age, license] = user;
+//   return `user name is ${name} his age is ${age} and he ${
+//     license ? "have" : "don't have"
+//   } a driving license`;
+// };
+// const check = personDetails(person3);
+// console.log(check);
+
+//////////////////////////////////////////////////////////
+type ProductInfo = [string, number, number];
+const product1: ProductInfo = ["headphones", 3000, 20];
+const product2: ProductInfo = ["laptop", 70000, 30];
+console.log("product 1 >>> ", product1);
+console.log("product 2 >>> ", product2);
