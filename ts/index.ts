@@ -344,7 +344,7 @@ const user2: LoginDetails = {
 // console.log(user1);
 // console.log(user2);
 
-const isAdmin = (user: LoginDetails): string => {
+const isAdmin = (user: LoginDetails): string => { // function to check if a provided user is admin or not
   const {name, role } = user;
   if (role === "admin") {
     return `user ${name} is admin`;
