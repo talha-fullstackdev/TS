@@ -318,39 +318,41 @@
 //   console.log(userOne.greet("pakistan"))
 //////////////////////////////////////////////
 /////////// Enums in TS
-enum Roles { // if we dont give values to key then by default Ts assign them numaric values starting from 0
-  user = "user", // here we use = instead of :
-  admin = "admin",
-}
-type LoginDetails = {
-  name?: string;
-  email: string;
-  password: string;
-  role: Roles; // like this we use Roles enum object
-};
-const user1: LoginDetails = {
-    name:"Talha Nawaz",
-  email: "talha@gmail.com",
-  password: "xyz",
-  role: Roles.admin,
-};
-const user2: LoginDetails = {
-    name:"hamza Nawaz",
-  email: "hamza@gmail.com",
-  password: "abc",
-  role: Roles.user,
-};
+// enum Roles { // if we dont give values to key then by default Ts assign them numaric values starting from 0
+//   user = "user", // here we use = instead of :
+//   admin = "admin",
+// }
+// type LoginDetails = {
+//   name?: string;
+//   email: string;
+//   password: string;
+//   role: Roles; // like this we use Roles enum object
+// };
+// const user1: LoginDetails = {
+//     name:"Talha Nawaz",
+//   email: "talha@gmail.com",
+//   password: "xyz",
+//   role: Roles.admin,
+// };
+// const user2: LoginDetails = {
+//     name:"hamza Nawaz",
+//   email: "hamza@gmail.com",
+//   password: "abc",
+//   role: Roles.user,
+// };
 // console.log("eamil >>>", user1.email, "password >>>", user1.password);
 // console.log(user1);
 // console.log(user2);
 
-const isAdmin = (user: LoginDetails): string => { // function to check if a provided user is admin or not
-  const {name, role } = user;
-  if (role === "admin") {
-    return `user ${name} is admin`;
-  } else {
-    return `user ${name} is not admin`;
-  }
-};
-const checkadmin = isAdmin(user1);
-console.log(checkadmin);
+// const isAdmin = (user: LoginDetails): string => { // function to check if a provided user is admin or not
+//   const {name, role } = user;
+//   if (role === "admin") {
+//     return `user ${name} is admin`;
+//   } else {
+//     return `user ${name} is not admin`;
+//   }
+// };
+// const checkadmin = isAdmin(user1);
+// console.log(checkadmin);
+/////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
