@@ -393,7 +393,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 // made a function which take two parameters if type of parameter is string then convert it to uppercase or the type is number then double the number
-// const practiceFunction = (elem: string | number | boolean):string|number => { 
+// const practiceFunction = (elem: string | number | boolean):string|number => {
 //   if (typeof elem == "string") {
 //     return elem.toLocaleUpperCase();
 //   }
@@ -417,15 +417,33 @@
 //         return value.charAt(0).toUpperCase() + value.slice(1);
 //     }
 //     if(typeof value =="boolean"){
-//         return value==true ? "yes" :"no" 
+//         return value==true ? "yes" :"no"
 //     }
 //     if(typeof value =="number"){
 //         return `$${value.toFixed(2)}`
 //     }
 //     return value;
-         
+
 // })
 // const check =practice(30.86546)
 // console.log(check)
 ///////////////////////////////////////////////////////////////////////////////////////
 // ******************* Unions **************************************
+type Person = {
+  name: string;
+  age: number;
+};
+type Employee = {
+  emp_id: number;
+  department: string;
+};
+// type EmployeeDetails = Person | Employee // we can use only one type proprties as well and we also use some properties from other type but we have to use one type complete
+type EmployeeDetails = Person & Employee; // here we using both the types object in employeedetails
+const emp1: EmployeeDetails = {
+  // emp1 should contain both Person and Employee types properties
+  name: "Talha",
+  age: 23,
+  emp_id: 45,
+  department: "DEV",
+};
+console.log(emp1);
