@@ -93,7 +93,13 @@
 // const greet = (name: string, id: number) => {
 //     return  console.log(`welocme ${name} your id is ${id}`);
 const person1 = ["talha", 24, true];
-// const person2 : PersonInfo = [ 24,"talha", true] // here orders matter now we made its type as tupple 
+// const person2 : PersonInfo = [ 24,"talha", true] // here orders matter now we made its type as tupple
 const person3 = ["hamza", 23, false];
-console.log(person1);
-console.log(person3);
+// console.log(person1);
+// console.log(person3);
+const personDetails = ((user) => {
+    const [name, age, license] = user;
+    return `user name is ${name} his age is ${age} and he ${license ? "have" : "don't have"} a driving license`;
+});
+const check = personDetails(person3);
+console.log(check);
