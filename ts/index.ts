@@ -429,21 +429,72 @@
 // console.log(check)
 ///////////////////////////////////////////////////////////////////////////////////////
 // ******************* Unions **************************************
-type Person = {
-  name: string;
-  age: number;
+// type Person = {
+//   name: string;
+//   age: number;
+// };
+// type Employee = {
+//   emp_id: number;
+//   department: string;
+// };
+// // type EmployeeDetails = Person | Employee // we can use only one type proprties as well and we also use some properties from other type but we have to use one type complete
+// type EmployeeDetails = Person & Employee; // here we using both the types object in employeedetails
+// const emp1: EmployeeDetails = {
+//   // emp1 should contain both Person and Employee types properties
+//   name: "Talha",
+//   age: 23,
+//   emp_id: 45,
+//   department: "DEV",
+// };
+// console.log(emp1);
+// type User = {
+//   name: string;
+//   age: number;
+//   gender: string;
+// };
+// type UserLocation = {
+//   city: string;
+//   country: string;
+// };
+// const userDetails = (user: User, location: UserLocation): string => {
+//   const { name } = user;
+//   const { city, country } = location;
+//   return `user name is ${name} and he is from ${city} ${country}`;
+// };
+// const check = userDetails(
+//   {
+//     name: "talha Nawaz",
+//     age: 24,
+//     gender: "male",
+//   },
+//   {
+//     city: "abbottabad",
+//     country: "pakistan",
+//   }
+// );
+// console.log(check);
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+// **************** Generics in Typescript *********************************
+// const genericFunction = <T>((value:T):T=>{
+//         return value
+// // })
+// const genericFunction = <T>(value: T): T => {
+//     return value;
+// // };
+// const check = <T> (value:T)=>{ // like this we add generic type now it can accept any type of data
+//     return value
+// }
+// let a = check(23)
+// let b = check("hkj")
+// let c = check(true)
+// console.log(a,b,c)
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+// ******************** Solving Function Overloading with TS Generics:
+const add = <T,U>(a: T, b: U) => { // here we provide two generic types
+  console.log(typeof a);
+  console.log(typeof b);
+//   return a;
 };
-type Employee = {
-  emp_id: number;
-  department: string;
-};
-// type EmployeeDetails = Person | Employee // we can use only one type proprties as well and we also use some properties from other type but we have to use one type complete
-type EmployeeDetails = Person & Employee; // here we using both the types object in employeedetails
-const emp1: EmployeeDetails = {
-  // emp1 should contain both Person and Employee types properties
-  name: "Talha",
-  age: 23,
-  emp_id: 45,
-  department: "DEV",
-};
-console.log(emp1);
+add<number ,string>(2, "wds");
