@@ -69,7 +69,7 @@ class Employee extends Person { // this way we can implement inheritance
   emp_id : number; // separete properties of child class
   department : string;
   constructor(name: string, age: number, rollNum: number, hobbies: string[],emp_id:number,department:string){ // we can also provide parent class properties here in child class constructor
-    super(name,age,rollNum,hobbies) // we provide properties using from parent class like this in super method
+    super(name,age,rollNum,hobbies) // we provide properties using from parent class like this in super method (basically it is used to called the parent class constructor)
     this.emp_id = emp_id
     this.department = department
   }
@@ -79,3 +79,6 @@ class Employee extends Person { // this way we can implement inheritance
 }  
 const emp1 : Employee = new Employee("talha", 24, 213, ["coding"], 234, "dev")
 console.log(emp1)
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////// Public, Protected & Private🔒 Access Modifiers in Object-Oriented Programming in TypeScript

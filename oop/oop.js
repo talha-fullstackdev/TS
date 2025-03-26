@@ -63,7 +63,7 @@ class Person {
 }
 class Employee extends Person {
     constructor(name, age, rollNum, hobbies, emp_id, department) {
-        super(name, age, rollNum, hobbies); // we provide properties using from parent class like this in super method
+        super(name, age, rollNum, hobbies); // we provide properties using from parent class like this in super method (basically it is used to called the parent class constructor)
         this.emp_id = emp_id;
         this.department = department;
     }
@@ -73,3 +73,6 @@ class Employee extends Person {
 }
 const emp1 = new Employee("talha", 24, 213, ["coding"], 234, "dev");
 console.log(emp1);
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////// Public, Protected & Private🔒 Access Modifiers in Object-Oriented Programming in TypeScript
