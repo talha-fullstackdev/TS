@@ -492,9 +492,28 @@
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 // ******************** Solving Function Overloading with TS Generics:
-const add = <T,U>(a: T, b: U) => { // here we provide two generic types
-  console.log(typeof a);
-  console.log(typeof b);
-//   return a;
-};
-add<number ,string>(2, "wds");
+// const add = <T,U>(a: T, b: U) => { // here we provide two generic types
+//   console.log(typeof a);
+//   console.log(typeof b);
+// //   return a;
+// };
+// add<number ,string>(2, "wds");
+//////////////////////////////////////////
+/////////////////////////////
+//////////////// TypeScript Interface - Defining Contracts for Objects & Classes
+// interface UserTypes { // this way we made a type interface for an object
+//     id: number;
+//     name: string;
+//     email: string;
+// }
+// const user:UserTypes={
+//     id:1,
+//     name:"Talha Nawz",
+//     email:"123@gmail.com"
+// }
+// const user2:UserTypes={
+//     id:1,
+//     name:"hamza",
+//     email:"123@gmail.com"
+// }
+// console.log(user2)
