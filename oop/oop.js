@@ -72,7 +72,11 @@ class Employee extends Person {
     }
 }
 const emp1 = new Employee("talha", 24, 213, ["coding"], 234, "dev");
+// console.log(emp1.rollNum) // cannot get it here because it is protected and used in parent and its child classes only
 console.log(emp1);
 ////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////
-////////// Public, Protected & Private🔒 Access Modifiers in Object-Oriented Programming in TypeScript
+////////// Public, Protected & Private 🔒 Access Modifiers in Object-Oriented Programming in TypeScript
+// global >>> by default accessable in every where
+// protected >>> only accessable in parent class and child class but not outside the class
+// private  >>> only accessable in class where it is defined and cannnot used in child classes or outside the class
