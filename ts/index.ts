@@ -529,18 +529,44 @@
 // };
 // const check = toUppercase(["Talha", "hamza", "zarar"]);
 // console.log(check);
-const check = (elem: number | string | boolean): number | string => {
-  if (typeof elem == "number") {
-    return elem * 2;
-  }
-  if (typeof elem == "string") {
-    return elem.toLocaleUpperCase();
-  }
-  return "invalid type";
+// const check = (elem: number | string | boolean): number | string => {
+//   if (typeof elem == "number") {
+//     return elem * 2;
+//   }
+//   if (typeof elem == "string") {
+//     return elem.toLocaleUpperCase();
+//   }
+//   return "invalid type";
+// };
+// const num = check(45);
+// const string = check("talha");
+// const invalid = check(true);
+// console.log(num);
+// console.log(string);
+// console.log(invalid);
+interface Products {
+  name: string;
+  price: number;
+  quantity: number;
+}
+const item1 = {
+  name: "Headphones",
+  price: 200,
+  quantity: 300,
 };
-const num = check(45);
-const string = check("talha");
-const invalid = check(true);
-console.log(num);
-console.log(string);
-console.log(invalid);
+const item2 = {
+  name: "laptop",
+  price: 120000,
+  quantity: 500,
+};
+const calPrice = (product: Products) => {
+  const { name, price, quantity } = product;
+  const totalPrice = price * quantity;
+  const discountPrice =
+    name == "Headphones" ? totalPrice * 0.05 : totalPrice * 0.001;
+  return `the name of product is ${name}\n and quantity is ${quantity}\n and price per unit is ${price}\n and total price will be ${
+    totalPrice - discountPrice
+  } after discount \n and discount given is ${discountPrice}`;
+};
+const checkDetails = calPrice(item1);
+console.log(checkDetails);
