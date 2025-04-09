@@ -117,7 +117,7 @@
 // const myNums: number[] = [3, 4, 5, 6, 7, 8];
 // const numsToStr: string[] = myNums.map((num: number) => num.toString());
 // console.log(numsToStr);
-//////// programe to make a array of only nums in an arrray
+//////// programe to make a array of only even nums in an arrray
 // const nums: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const evenNums: number[] = nums.filter((num: number) => num % 2 === 0);
 // console.log(evenNums)
@@ -130,7 +130,7 @@
 // } else {
 //   console.log("no name have length greater then 12");
 // }
-/////////////wwrite a programe to find average of arrays numbers
+/////////////write a programe to find average of arrays numbers
 // const Average =((array:number[])=>{
 //     const result = array.reduce((acc:number,cur:number)=>acc+cur/array.length,0)
 //     return result
@@ -384,7 +384,7 @@
 ///////// Unions and Intersections in TypeScript
 // ******************* Unions **************************************
 // const inputDiffvalues = (elem: string | number | boolean) => {
-//   // by this way a function can accept multiples types data this is called union in TS
+//   // by this way a function can accept multiples types of data this is called union in TS
 //   console.log(elem);
 // };
 // inputDiffvalues("talha");
@@ -517,3 +517,12 @@
 //     email:"123@gmail.com"
 // }
 // console.log(user2)
+////////////////////////////////////////////////////////////////
+const toUppercase = (array: string[]): string[] => {
+  const upperCase: string[] = array.map((elem: string) =>
+    elem.toLocaleUpperCase()
+  );
+  return upperCase;
+};
+const check = toUppercase(["Talha", "hamza", "zarar"]);
+console.log(check);

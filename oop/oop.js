@@ -96,7 +96,17 @@ class Employee {
     }
     intro() {
         console.log(`emp name is ${this.name} his age is ${this.age} and his gender is ${this.gender}`);
+        if (this.age > 18) {
+            console.log("yes he can drive");
+        }
+        else {
+            console.log("he cannot drive due to underage");
+        }
+        return;
     }
 }
 const emp1 = new Employee("talha", 24, "male");
-console.log(emp1);
+console.log(emp1.intro());
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//////////    Getter and Setter Methods in TypeScript Classes 
