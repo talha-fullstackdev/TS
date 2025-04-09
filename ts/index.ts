@@ -518,11 +518,29 @@
 // }
 // console.log(user2)
 ////////////////////////////////////////////////////////////////
-const toUppercase = (array: string[]): string[] => {
-  const upperCase: string[] = array.map((elem: string) =>
-    elem.toLocaleUpperCase()
-  );
-  return upperCase;
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+///////////////// practice
+// const toUppercase = (array: string[]): string[] => {
+//   const upperCase: string[] = array.map((elem: string) =>
+//     elem.toLocaleUpperCase()
+//   );
+//   return upperCase;
+// };
+// const check = toUppercase(["Talha", "hamza", "zarar"]);
+// console.log(check);
+const check = (elem: number | string | boolean): number | string => {
+  if (typeof elem == "number") {
+    return elem * 2;
+  }
+  if (typeof elem == "string") {
+    return elem.toLocaleUpperCase();
+  }
+  return "invalid type";
 };
-const check = toUppercase(["Talha", "hamza", "zarar"]);
-console.log(check);
+const num = check(45);
+const string = check("talha");
+const invalid = check(true);
+console.log(num);
+console.log(string);
+console.log(invalid);
