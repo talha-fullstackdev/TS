@@ -594,3 +594,4 @@
 // const checkDetails = calPrice(item4);
 // console.log(checkDetails);
 /////////////////////////////////
+////////////
