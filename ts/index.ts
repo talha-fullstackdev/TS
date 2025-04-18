@@ -544,16 +544,16 @@
 // console.log(num);
 // console.log(string);
 // console.log(invalid);
-// interface Products {
-//   name: string;
-//   price: number;
-//   quantity: number;
-// }
-// const item1 = {
-//   name: "Headphones",
-//   price: 200,
-//   quantity: 300,
-// };
+interface Products {
+  name: string;
+  price: number;
+  quantity: number;
+}
+const item1 = {
+  name: "Headphones",
+  price: 200,
+  quantity: 300,
+};
 // const item2 = {
 //   name: "laptop",
 //   price: 120000,
@@ -569,27 +569,27 @@
 //   price: 1200,
 //   quantity: 600,
 // };
-// const calPrice = (product: Products) => {
-//   const { name, price, quantity } = product;
-//   const totalPrice = price * quantity;
-//   let discountPrice = 0;
-//   if (name == "Headphones") {
-//     discountPrice = totalPrice * 0.05;
-//   }
-//   if (name == "laptop") {
-//     discountPrice = totalPrice * 0.001;
-//   }
-//   if (name == "mobile") {
-//     discountPrice = totalPrice * 0.02;
-//   }
-//   if (name == "keyboard") {
-//     discountPrice = totalPrice * 0.01;
-//   }
-//   //   const discountPrice =
-//   //     name == "Headphones" ? totalPrice * 0.05 : totalPrice * 0.001;
-//   return `the name of product is ${name}\n and quantity is ${quantity}\n and price per unit is ${price}\n and total price will be ${
-//     totalPrice - discountPrice
-//   } after discount \n and discount given is ${discountPrice}`;
-// };
-// const checkDetails = calPrice(item4);
-// console.log(checkDetails);
+const calPrice = (product: Products) => {
+  const { name, price, quantity } = product;
+  const totalPrice = price * quantity;
+  let discountPrice = 0;
+  if (name == "Headphones") {
+    discountPrice = totalPrice * 0.05;
+  }
+  if (name == "laptop") {
+    discountPrice = totalPrice * 0.001;
+  }
+  if (name == "mobile") {
+    discountPrice = totalPrice * 0.02;
+  }
+  if (name == "keyboard") {
+    discountPrice = totalPrice * 0.01;
+  }
+  //   const discountPrice =
+  //     name == "Headphones" ? totalPrice * 0.05 : totalPrice * 0.001;
+  return `the name of product is ${name}\n and quantity is ${quantity}\n and price per unit is ${price}\n and total price will be ${
+    totalPrice - discountPrice
+  } after discount \n and discount given is ${discountPrice}`;
+};
+const checkDetails = calPrice(item1);
+console.log(checkDetails);
