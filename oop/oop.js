@@ -65,7 +65,7 @@
 //       console.log(`student name is ${this.name} and his rollnumber is ${this.rollNum}`)
 //     }
 //   }
-// class Employee extends Person { // this way we can implement inheritance 
+// class Employee extends Person { // this way we can implement inheritance
 //   emp_id : number; // separete properties of child class
 //   department : string;
 //   constructor(name: string, age: number, rollNum: number, hobbies: string[],emp_id:number,department:string){ // we can also provide parent class properties here in child class constructor
@@ -76,7 +76,7 @@
 //   getEmployeeDetails(){
 //     console.log(`emp name is ${this.name} his roll number is ${this.rollNum} hobbies ${this.hobbies} emp-id ${this.emp_id} and department is ${this.department}`)
 //   }
-// }  
+// }
 // const emp1 : Employee = new Employee("talha", 24, 213, ["coding"], 234, "dev")
 // // console.log(emp1.rollNum) // cannot get it here because it is protected and used in parent and its child classes only
 // console.log(emp1)
@@ -89,24 +89,25 @@
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 class Employee {
-    constructor(name, age, gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+  constructor(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+  intro() {
+    console.log(
+      `emp name is ${this.name} his age is ${this.age} and his gender is ${this.gender}`
+    );
+    if (this.age > 18) {
+      console.log("yes he can drive");
+    } else {
+      console.log("he cannot drive due to underage");
     }
-    intro() {
-        console.log(`emp name is ${this.name} his age is ${this.age} and his gender is ${this.gender}`);
-        if (this.age > 18) {
-            console.log("yes he can drive");
-        }
-        else {
-            console.log("he cannot drive due to underage");
-        }
-        return;
-    }
+    return;
+  }
 }
 const emp1 = new Employee("talha", 24, "male");
 console.log(emp1.intro());
 /////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////
-//////////    Getter and Setter Methods in TypeScript Classes 
+//////////    Getter and Setter Methods in TypeScript Classes
