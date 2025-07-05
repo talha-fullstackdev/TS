@@ -594,4 +594,3 @@ const calPrice = (product: Products) => {
 const checkDetails = calPrice(item1);
 console.log(checkDetails);
 
-/
